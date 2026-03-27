@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<!-- Meta Pixel Code 保持不变 -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3812179845583607');
+fbq('track', 'PageView');
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1365033678455283');
+fbq('track', 'PageView');
+</script>
+
+<script> 
+function addCartEvent(){
+   fbq('track', 'AddToCart');
+}
+</script>     
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ليالي - تعارف قريب | نساء بالقرب منك</title>
+
+<link rel="stylesheet" href="static/css/main.css">
+</head>
+
+<body>
+<div class="bg-effects"></div>
+
+<div class="container">
+<header class="header" style="text-align:center;">
+    <img src="static/images/logo.png" style="width:140px;margin-bottom:5px;">
+    <p class="tagline">تعارف بدون تعقيد</p>
+</header>
+
+<div class="stats-banner">
+<div class="stats-number">
+<span class="pulse-dot"></span>551
+</div>
+<p class="stats-text">
+في نطاق <strong>10 كلم</strong> يوجد <strong>551 امرأة</strong> بالقرب منك الآن!<br>
+بعضهن جميلات وبعضهن ناضجات يبحثن عن التعارف<br>
+ابدأ الآن ولا تتردد!
+</p>
+</div>
+
+<div class="filter-section">
+
+<div class="filter-row">
+<div class="filter-title">✨ النوع</div>
+<div class="filter-options" id="styleFilter">
+<button class="filter-btn active" data-style="all">الكل</button>
+<button class="filter-btn" data-style="sweet">لطيفة</button>
+<button class="filter-btn" data-style="sexy">جذابة</button>
+<button class="filter-btn" data-style="pure">بريئة</button>
+<button class="filter-btn" data-style="mature">ناضجة</button>
+</div>
+</div>
+
+<div class="filter-row">
+<div class="filter-title">💪 الجسم</div>
+<div class="filter-options" id="bodyFilter">
+<button class="filter-btn active" data-body="all">الكل</button>
+<button class="filter-btn" data-body="slim">نحيفة</button>
+<button class="filter-btn" data-body="curvy">ممتلئة</button>
+<button class="filter-btn" data-body="fit">رياضية</button>
+</div>
+</div>
+
+<div class="filter-row">
+<div class="filter-title">🔥 الاهتمامات</div>
+<div class="filter-options" id="serviceFilter">
+<button class="filter-btn active" data-service="all">الكل</button>
+<button class="filter-btn" data-service="oral">دردشة</button>
+<button class="filter-btn" data-service="anal">لقاء</button>
+<button class="filter-btn" data-service="3p">مغامرة</button>
+<button class="filter-btn" data-service="raw">تعرف</button>
+</div>
+</div>
+
+</div>
+
+<section class="girls-section">
+<h2 class="section-title">🍑 نساء بالقرب منك</h2>
+<p class="swipe-hint">👆 اضغط على الصورة</p>
+<div class="girls-grid" id="girlsGrid"></div>
+</section>
+
+<p class="disclaimer">
+للبالغين فقط · جميع المستخدمين موثقون
+</p>
+</div>
+
+<div class="fixed-bottom">
+<a href="https://deadss.com/j/LLkcYtRg" onclick="addCartEvent()">
+<button class="cta-btn">
+🔥 حمّل التطبيق الآن
+</button>
+</a>
+</div>
+
+<!-- 弹窗 -->
+<div class="modal-overlay" id="modalOverlay">
+<div class="modal-content">
+<button class="modal-close" onclick="closeModal()">×</button>
+<img class="modal-image" id="modalImage" src="">
+<div class="modal-info">
+<h3 class="modal-name" id="modalName"></h3>
+<p class="modal-desc" id="modalDesc"></p>
+<div class="modal-tags" id="modalTags"></div>
+<a href="https://deadss.com/j/LLkcYtRg" onclick="addCartEvent()">
+<button class="modal-btn">🔥 تواصل الآن</button>
+</a>
+</div>
+</div>
+</div>
+
+<script>
+
+const girlsData = [
+{id:1,name:"Aya 💕",age:23,style:"sweet",body:"slim",services:["oral"],distance:"1.2km",online:true,desc:"أبحث عن شخص لطيف",tags:["لطيفة","قريبة","مرحة"]},
+{id:2,name:"Lina 🍑",age:26,style:"sexy",body:"curvy",services:["anal"],distance:"0.8km",online:true,desc:"أحب التعارف",tags:["جذابة","مرحة","نشطة"]},
+{id:3,name:"Sara 🔥",age:32,style:"mature",body:"curvy",services:["oral"],distance:"2.1km",online:true,desc:"ناضجة وهادئة",tags:["ناضجة","راقية","هادئة"]},
+{id:4,name:"Nora 🌙",age:21,style:"pure",body:"slim",services:["oral"],distance:"3.5km",online:false,desc:"خجولة قليلاً",tags:["بريئة","لطيفة","خجولة"]},
+{id:5,name:"Maya 💋",age:28,style:"sexy",body:"fit",services:["3p"],distance:"1.8km",online:true,desc:"أحب المغامرة",tags:["جريئة","ممتعة","نشطة"]},
+{id:6,name:"Rania 👠",age:24,style:"sweet",body:"slim",services:["oral"],distance:"4.2km",online:true,desc:"نقضي وقت ممتع",tags:["لطيفة","رومانسية","مرحة"]},
+{id:7,name:"Hiba 🌸",age:29,style:"sexy",body:"curvy",services:["anal"],distance:"2.8km",online:false,desc:"أحب الضحك",tags:["مرحة","جذابة","اجتماعية"]},
+{id:8,name:"Salma 🌹",age:38,style:"mature",body:"curvy",services:["oral"],distance:"1.5km",online:true,desc:"ناضجة وهادئة",tags:["ناضجة","هادئة","راقية"]},
+{id:9,name:"Imane 🎀",age:22,style:"pure",body:"slim",services:["oral"],distance:"5.1km",online:true,desc:"بسيطة ومرحة",tags:["بريئة","لطيفة","مرحة"]},
+{id:10,name:"Yasmine 💃",age:27,style:"sexy",body:"fit",services:["anal"],distance:"0.5km",online:true,desc:"قريبة منك",tags:["قريبة","جذابة","ممتعة"]},
+{id:11,name:"Zahra 🌺",age:25,style:"sweet",body:"curvy",services:["oral"],distance:"3.3km",online:false,desc:"أحب التعارف",tags:["لطيفة","مرحة","رومانسية"]},
+{id:12,name:"Khadija 💎",age:30,style:"mature",body:"fit",services:["anal"],distance:"2.6km",online:true,desc:"ناضجة وأنيقة",tags:["راقية","ناضجة","هادئة"]},
+{id:13,name:"Samira 🔥",age:34,style:"mature",body:"curvy",services:["oral"],distance:"1.9km",online:true,desc:"أبحث عن صداقة",tags:["مرحة","ناضجة","جذابة"]},
+{id:14,name:"Malak 🌙",age:20,style:"pure",body:"slim",services:["oral"],distance:"2.3km",online:true,desc:"بسيطة ولطيفة",tags:["بريئة","ناعمة","هادئة"]},
+{id:15,name:"Nadia 💃",age:26,style:"sexy",body:"fit",services:["3p"],distance:"3.1km",online:false,desc:"أحب الخروج",tags:["جريئة","نشطة","ممتعة"]},
+{id:16,name:"Houda 💗",age:24,style:"sweet",body:"curvy",services:["oral"],distance:"4.5km",online:true,desc:"مرحة وأحب الضحك",tags:["مرحة","لطيفة","خفيفة"]},
+{id:17,name:"Wafa 🔥",age:27,style:"sexy",body:"curvy",services:["anal"],distance:"0.9km",online:true,desc:"أحب المغامرة",tags:["جذابة","نشطة","قريبة"]},
+{id:18,name:"Latifa 🌹",age:36,style:"mature",body:"curvy",services:["oral"],distance:"2.7km",online:true,desc:"ناضجة وهادئة",tags:["هادئة","راقية","ناضجة"]},
+{id:19,name:"Fatima 🐰",age:21,style:"pure",body:"slim",services:["oral"],distance:"3.8km",online:false,desc:"خجولة قليلاً",tags:["بريئة","ناعمة","لطيفة"]},
+{id:20,name:"Amina 💋",age:25,style:"sexy",body:"fit",services:["anal"],distance:"1.4km",online:true,desc:"أحب التعارف",tags:["جذابة","مرحة","نشطة"]},
+{id:21,name:"Soukaina 🌈",age:23,style:"sweet",body:"slim",services:["oral"],distance:"5.2km",online:true,desc:"مرحة جداً",tags:["لطيفة","خفيفة","مرحة"]},
+{id:22,name:"Salima 🖤",age:28,style:"sexy",body:"curvy",services:["anal"],distance:"1.1km",online:true,desc:"أحب الحياة",tags:["جذابة","قوية","ممتعة"]},
+{id:23,name:"Naima 🌺",age:40,style:"mature",body:"fit",services:["oral"],distance:"2.2km",online:false,desc:"ناضجة وأنيقة",tags:["راقية","ناضجة","هادئة"]},
+{id:24,name:"Zineb ✿",age:22,style:"pure",body:"slim",services:["oral"],distance:"4.1km",online:true,desc:"بسيطة",tags:["بريئة","لطيفة","ناعمة"]}
+];
+
+// 下面JS逻辑完全不动
+let currentStyle = 'all';
+let currentBody = 'all';
+let currentService = 'all';
+
+document.addEventListener('DOMContentLoaded', function () {
+    renderGirls();
+    setupFilters();
+});
+
+function setupFilters() {
+    document.querySelectorAll('#styleFilter .filter-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('#styleFilter .filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            currentStyle = this.dataset.style;
+            renderGirls();
+        });
+    });
+
+    document.querySelectorAll('#bodyFilter .filter-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('#bodyFilter .filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            currentBody = this.dataset.body;
+            renderGirls();
+        });
+    });
+
+    document.querySelectorAll('#serviceFilter .filter-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('#serviceFilter .filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            currentService = this.dataset.service;
+            renderGirls();
+        });
+    });
+}
+
+function renderGirls() {
+    const grid = document.getElementById('girlsGrid');
+
+    let filteredGirls = girlsData.filter(girl => {
+        const styleMatch = currentStyle === 'all' || girl.style === currentStyle;
+        const bodyMatch = currentBody === 'all' || girl.body === currentBody;
+        const serviceMatch = currentService === 'all' || girl.services.includes(currentService);
+        return styleMatch && bodyMatch && serviceMatch;
+    });
+
+    grid.innerHTML = filteredGirls.map(girl => `
+        <div class="girl-card" onclick="openModal(${girl.id})">
+            <img src="static/images/girls/${girl.id}.jpg">
+            <div class="distance-badge">📍 ${girl.distance}</div>
+            ${girl.online ? '<div class="online-badge">متصلة</div>' : ''}
+            <div class="girl-overlay">
+                <div class="girl-name">${girl.name}</div>
+                <div class="girl-age">${girl.age} سنة</div>
+                <div class="girl-tags">
+                    ${girl.tags.slice(0, 3).map(tag => `<span class="girl-tag">${tag}</span>`).join('')}
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+function openModal(id) {
+    const girl = girlsData.find(g => g.id === id);
+    document.getElementById('modalImage').src = `static/images/girls/${girl.id}.jpg`;
+    document.getElementById('modalName').textContent = `${girl.name} · ${girl.age} سنة`;
+    document.getElementById('modalDesc').textContent = girl.desc;
+    document.getElementById('modalTags').innerHTML = girl.tags.map(tag =>
+        `<span class="modal-tag">${tag}</span>`
+    ).join('');
+    document.getElementById('modalOverlay').classList.add('active');
+}
+
+function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('active');
+}
+
+</script>
+
+</body>
+</html>
